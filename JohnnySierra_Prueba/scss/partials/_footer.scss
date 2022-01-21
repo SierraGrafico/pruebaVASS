@@ -1,0 +1,206 @@
+footer {
+    background: $Dgrey;
+    padding: 50px 0;
+    border-top: 1px solid #808080;
+    font-size: 16px;
+
+    p {
+
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+
+    }
+
+    h4 {
+        color: #fff;
+        font-weight: 600;
+        font-weight: 600;
+        text-indent: 40px;
+        font-size: 18px;
+    }
+
+    ul {
+        color: $blanco;
+        list-style: none;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $blanco;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+
+    .vass--personalidad {
+        display: flex;
+        flex-direction: column;
+        justify-items: right;
+        padding-right: 70px;
+
+        .vass-lema {
+            color: $blanco;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: right;
+            margin-bottom: 110px;
+        }
+
+        .footer-logo {
+            max-width: 80px;
+            align-self: flex-end;
+        }
+    }
+
+    .vass-footer-company {
+        margin-top: 50px;
+
+        ul {
+            display: flex;
+
+            li {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .secondary-footer {
+        border-top: 1px solid #cecece;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        .vass-copyright {
+            color: #fff;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .vass-politicas {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                li {
+                    margin-right: 15px;
+                    padding-right: 10px;
+                    border-right: 1px solid #cecece;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+
+        .vass-social {
+            ul {
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    margin-right: 15px;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width:768px) {
+        .vass--personalidad {
+            flex-direction: row;
+            justify-items: initial;
+            padding-right: inherit;
+
+            .vass-lema {
+                margin-bottom: initial;
+            }
+
+            .footer-logo {
+                max-width: 80px;
+                height: auto;
+                align-self: inherit;
+                object-fit: contain;
+            }
+        }
+
+        .secondary-footer {
+            flex-direction: column;
+            justify-content: center;
+
+            .vass-social {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                }
+
+            }
+
+            .vass-politicas {
+                ul {
+                    display: flex;
+                    padding: 0 20vw;
+                    flex-wrap: wrap;
+
+
+
+                    li {
+                        margin-right: 15px;
+                        padding-right: initial;
+                        border-right: 0;
+                        text-align: center;
+                        font-size: 13px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:568px) {
+        h4 {
+            text-indent: 0;
+        }
+
+        ul {
+            padding: 0;
+            font-size: 13px;
+        }
+
+        .vass--personalidad {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-bottom: 80px;
+
+            .footer-logo {
+                object-fit: contain;
+            }
+        }
+
+        .vass-footer-company {
+            ul {
+                justify-content: center;
+
+            }
+        }
+
+        .secondary-footer {
+            .vass-politicas {
+                ul {
+                    padding: 0 10vw;
+                }
+            }
+        }
+    }
+}
